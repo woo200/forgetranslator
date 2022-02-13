@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.UUID;
 
-// The value here should match an entry in the META-INF/mods.toml file
+
 @Mod("translator")
 public class ModTranslator
 {
@@ -96,10 +96,6 @@ public class ModTranslator
         }
     }
 
-    /**
-     * Yes, I know this mod is complete spaghetti code. I will clean up the code in the next release.
-     * Pardon me, but I made this mod in math class at school. I rushed the whole thing and made it in about an hour.
-     */
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.FORGE)
     public static class RegistryEvents {
         @SubscribeEvent
@@ -107,6 +103,7 @@ public class ModTranslator
             if (!TOGGLE_TRANSLATIONS.isDown())
                 return;
 
+            // If the API key has not been set, show an error message.
             if (translatorConfig.getConfigString("api_key").equals("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:fx")) {
                 Minecraft.getInstance().player.sendMessage(prefixed(
                         (BaseComponent) new TextComponent("Click this message to set your API key")
