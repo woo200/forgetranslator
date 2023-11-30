@@ -4,6 +4,9 @@ This mod automatically translates incoming and outgoing chat messages in minecra
 To use this mod, you MUST get a DeepL api key. [How To Get One](#getting-a-deepl-key)
 If you would like to modify this, feel free to.
 
+[![CurseForge](https://cf.way2muchnoise.eu/579823.svg)](https://www.curseforge.com/minecraft/mc-mods/automatic-chat-translator)
+[![Versions](https://cf.way2muchnoise.eu/versions/579823.svg)](https://www.curseforge.com/minecraft/mc-mods/automatic-chat-translator)
+
 ### Getting a DeepL key
 - Step 1) Go to https://deepl.com/
 - Step 2) Click "Start free trial" at the top right corner
